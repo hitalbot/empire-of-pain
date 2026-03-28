@@ -1,0 +1,259 @@
+{
+  "book": {
+    "title": "Empire of Pain",
+    "author": "Patrick Radden Keefe",
+    "subtitle": "The Secret History of the Sackler Dynasty"
+  },
+  "currentChapter": 3,
+  "characters": [
+    {
+      "id": "isaac-sackler",
+      "name": "Isaac Sackler",
+      "born": "~1880s, Galicia (Austria-Hungary)",
+      "died": "",
+      "role": "Patriarch",
+      "generation": "immigrant",
+      "photo": "",
+      "shortBio": "Immigrated to Brooklyn from Galicia in the early 1900s. Ran a grocery store in Flatbush that failed during the Great Depression. Fiercely valued education.",
+      "bullets": [
+        "Immigrated from Galicia (modern-day Poland/Ukraine) in the pre-WWI wave",
+        "Settled in Flatbush, Brooklyn",
+        "Ran a grocery store that was wiped out by the Depression",
+        "Despite poverty, insisted all three sons pursue medicine",
+        "The family's financial precariousness shaped the brothers' relentless ambition"
+      ],
+      "chapter_introduced": 1,
+      "connections": ["sophie-sackler", "arthur-sackler", "mortimer-sackler", "raymond-sackler"]
+    },
+    {
+      "id": "sophie-sackler",
+      "name": "Sophie Sackler",
+      "born": "",
+      "died": "",
+      "role": "Matriarch",
+      "generation": "immigrant",
+      "photo": "",
+      "shortBio": "Born Sophie Greenberg. Mother of the three Sackler brothers. Eastern European Jewish immigrant. Partner in Isaac's dream of upward mobility through education.",
+      "bullets": [
+        "Born Sophie Greenberg",
+        "Eastern European Jewish immigrant background",
+        "Raised three sons who all became physicians",
+        "Endured the Depression-era collapse of the family grocery store"
+      ],
+      "chapter_introduced": 1,
+      "connections": ["isaac-sackler", "arthur-sackler", "mortimer-sackler", "raymond-sackler"]
+    },
+    {
+      "id": "arthur-sackler",
+      "name": "Arthur M. Sackler",
+      "born": "August 22, 1913, Brooklyn",
+      "died": "May 26, 1987",
+      "role": "Eldest Brother / Pharma Marketing Pioneer",
+      "generation": "brothers",
+      "photo": "",
+      "shortBio": "The architect of the Sackler empire. Physician, psychiatrist, art collector, and the man who invented modern pharmaceutical advertising. Funded his brothers' educations and built the playbook Purdue Pharma would later use for OxyContin.",
+      "bullets": [
+        "Eldest of the three brothers — quasi-paternal figure to Mortimer and Raymond",
+        "Worked multiple jobs to put his brothers through medical school",
+        "Worked at Creedmoor State Hospital in Queens doing psychiatric research",
+        "Acquired William Douglas McAdams, a medical advertising agency",
+        "Invented modern pharma marketing: direct-to-physician campaigns, broadening indications, KOL strategy",
+        "Masterminded the Valium campaign for Roche — made it the first $100M drug",
+        "Founded the Medical Tribune, a widely-read medical newspaper",
+        "Had a stake in IMS Health — tracked prescription data, giving him unmatched market intelligence",
+        "Prolific art collector: Sackler Wing at the Met, galleries at the Smithsonian",
+        "Married three times: Else Jorgensen, Marietta Lutze, Jillian Tully",
+        "Died before OxyContin existed — but built the machine that made it possible"
+      ],
+      "chapter_introduced": 1,
+      "connections": ["isaac-sackler", "sophie-sackler", "mortimer-sackler", "raymond-sackler", "else-jorgensen", "marietta-lutze", "jillian-sackler"]
+    },
+    {
+      "id": "mortimer-sackler",
+      "name": "Mortimer D. Sackler",
+      "born": "1916, Brooklyn",
+      "died": "March 24, 2010",
+      "role": "Middle Brother / Purdue Co-Owner",
+      "generation": "brothers",
+      "photo": "",
+      "shortBio": "The middle brother. Physician. More reserved than Arthur. Co-purchased Purdue Frederick Company with Raymond in 1952. Eventually relocated to London.",
+      "bullets": [
+        "Middle brother — quieter, more reserved than Arthur",
+        "Education funded by Arthur's relentless hustle",
+        "Co-purchased Purdue Frederick Company with Raymond in 1952",
+        "Relocated to Europe, based in London",
+        "Involved in Purdue's international operations"
+      ],
+      "chapter_introduced": 1,
+      "connections": ["isaac-sackler", "sophie-sackler", "arthur-sackler", "raymond-sackler"]
+    },
+    {
+      "id": "raymond-sackler",
+      "name": "Raymond R. Sackler",
+      "born": "1920, Brooklyn",
+      "died": "July 17, 2017",
+      "role": "Youngest Brother / Purdue Co-Owner",
+      "generation": "brothers",
+      "photo": "",
+      "shortBio": "The youngest Sackler brother. Physician. Worked closely with Mortimer in the pharmaceutical business. Co-purchased Purdue Frederick Company.",
+      "bullets": [
+        "Youngest of the three brothers",
+        "Also became a physician, funded by Arthur",
+        "Co-purchased Purdue Frederick Company with Mortimer in 1952",
+        "Worked closely with Mortimer on the business side"
+      ],
+      "chapter_introduced": 1,
+      "connections": ["isaac-sackler", "sophie-sackler", "arthur-sackler", "mortimer-sackler"]
+    },
+    {
+      "id": "else-jorgensen",
+      "name": "Else Jorgensen",
+      "born": "",
+      "died": "",
+      "role": "Arthur's First Wife",
+      "generation": "spouses",
+      "photo": "",
+      "shortBio": "Arthur Sackler's first wife. They married in the early 1940s. The marriage ended in divorce.",
+      "bullets": [
+        "Married Arthur in the early 1940s",
+        "Marriage ended in divorce"
+      ],
+      "chapter_introduced": 2,
+      "connections": ["arthur-sackler"]
+    },
+    {
+      "id": "marietta-lutze",
+      "name": "Marietta Lutze",
+      "born": "",
+      "died": "",
+      "role": "Arthur's Second Wife",
+      "generation": "spouses",
+      "photo": "",
+      "shortBio": "Arthur Sackler's second wife. Also ended in divorce.",
+      "bullets": [
+        "Arthur's second wife",
+        "Marriage also ended in divorce"
+      ],
+      "chapter_introduced": 2,
+      "connections": ["arthur-sackler"]
+    },
+    {
+      "id": "jillian-sackler",
+      "name": "Jillian Tully Sackler",
+      "born": "",
+      "died": "",
+      "role": "Arthur's Third Wife / Legacy Steward",
+      "generation": "spouses",
+      "photo": "",
+      "shortBio": "Arthur's third and final wife. Significantly younger. Became the primary steward of his art collection, philanthropic legacy, and reputation after his death.",
+      "bullets": [
+        "Arthur's third wife — significantly younger",
+        "Became the steward of his art collection and philanthropic legacy",
+        "Central to preserving Arthur's public image after his death"
+      ],
+      "chapter_introduced": 2,
+      "connections": ["arthur-sackler"]
+    }
+  ],
+  "familyTree": {
+    "patriarchs": {
+      "father": "isaac-sackler",
+      "mother": "sophie-sackler"
+    },
+    "children": ["arthur-sackler", "mortimer-sackler", "raymond-sackler"],
+    "spouses": {
+      "arthur-sackler": ["else-jorgensen", "marietta-lutze", "jillian-sackler"]
+    }
+  },
+  "timeline": [
+    {
+      "year": "Early 1900s",
+      "event": "Isaac Sackler immigrates from Galicia to Brooklyn",
+      "category": "family",
+      "chapter": 1
+    },
+    {
+      "year": "1913",
+      "event": "Arthur Sackler born in Brooklyn",
+      "category": "family",
+      "chapter": 1
+    },
+    {
+      "year": "1916",
+      "event": "Mortimer Sackler born in Brooklyn",
+      "category": "family",
+      "chapter": 1
+    },
+    {
+      "year": "1920",
+      "event": "Raymond Sackler born in Brooklyn",
+      "category": "family",
+      "chapter": 1
+    },
+    {
+      "year": "1929",
+      "event": "Great Depression devastates family — Isaac's grocery store fails",
+      "category": "family",
+      "chapter": 1
+    },
+    {
+      "year": "Late 1930s",
+      "event": "All three brothers pursue medical degrees; Arthur works multiple jobs to fund their educations",
+      "category": "career",
+      "chapter": 1
+    },
+    {
+      "year": "~1942",
+      "event": "Arthur begins work at Creedmoor State Hospital, conducting psychiatric research",
+      "category": "career",
+      "chapter": 2
+    },
+    {
+      "year": "1940s",
+      "event": "Arthur enters medical advertising, acquires the William Douglas McAdams agency",
+      "category": "business",
+      "chapter": 2
+    },
+    {
+      "year": "1952",
+      "event": "Mortimer and Raymond purchase Purdue Frederick Company",
+      "category": "business",
+      "chapter": 3
+    },
+    {
+      "year": "1950s-60s",
+      "event": "Arthur revolutionizes pharma marketing — campaigns for Librium and then Valium become legendary",
+      "category": "business",
+      "chapter": 3
+    },
+    {
+      "year": "1960s",
+      "event": "Arthur founds the Medical Tribune; acquires stake in IMS Health (prescription data tracking)",
+      "category": "business",
+      "chapter": 3
+    },
+    {
+      "year": "1960s-70s",
+      "event": "Arthur builds vast art collection — Sackler Wing at the Met, Smithsonian galleries",
+      "category": "philanthropy",
+      "chapter": 3
+    }
+  ],
+  "notes": [
+    {
+      "chapter": 1,
+      "title": "The Immigrant Story",
+      "content": "The Sacklers are a classic American immigrant family — Galician Jews who arrived in Brooklyn with nothing. Isaac's grocery store failed in the Depression, but the family's obsession with education as the path out of poverty would produce three doctors in one generation."
+    },
+    {
+      "chapter": 2,
+      "title": "Arthur the Engine",
+      "content": "Arthur is the protagonist of the early book. He's not just ambitious — he's operating on a different level. Working at Creedmoor while simultaneously building an advertising empire. He essentially funds his brothers' entire medical education. The dynamic between the brothers is almost feudal: Arthur as lord, Mortimer and Raymond as beneficiaries."
+    },
+    {
+      "chapter": 3,
+      "title": "The Playbook",
+      "content": "This is where the book's thesis crystallizes. Arthur doesn't just advertise drugs — he invents the system. Direct-to-physician marketing, broadening indications beyond clinical evidence, using KOLs, owning the data pipeline (IMS Health). The Valium campaign is the proof of concept. Everything Purdue later does with OxyContin is Arthur's playbook, perfected."
+    }
+  ]
+}

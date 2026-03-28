@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empire of Pain — A Visual Reading Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <h1>Empire of Pain</h1>
+        <p class="header-subtitle">A Visual Reading Guide &mdash; Patrick Radden Keefe</p>
+      </div>
+      <div class="chapter-badge">Ch. <span id="currentChapter">3</span></div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="tab-nav">
+    <button class="tab active" data-section="characters">Characters</button>
+    <button class="tab" data-section="family-tree">Family Tree</button>
+    <button class="tab" data-section="timeline">Timeline</button>
+    <button class="tab" data-section="notes">Notes</button>
+  </nav>
+
+  <!-- Characters Section -->
+  <section id="characters" class="section active">
+    <div class="section-header">
+      <h2>Characters</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="immigrant">Immigrants</button>
+        <button class="filter-btn" data-filter="brothers">The Brothers</button>
+        <button class="filter-btn" data-filter="spouses">Spouses</button>
+      </div>
+    </div>
+    <div id="characters-grid" class="characters-grid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- Family Tree Section -->
+  <section id="family-tree" class="section">
+    <div class="section-header">
+      <h2>The Sackler Family</h2>
+    </div>
+    <div class="tree-container">
+      <div class="tree">
+        <!-- Parents -->
+        <div class="tree-level tree-parents">
+          <div class="tree-couple">
+            <div class="tree-node" data-id="isaac-sackler">
+              <div class="tree-avatar">IS</div>
+              <div class="tree-name">Isaac Sackler</div>
+              <div class="tree-role">Patriarch</div>
+            </div>
+            <div class="tree-connector-h"></div>
+            <div class="tree-node" data-id="sophie-sackler">
+              <div class="tree-avatar">SS</div>
+              <div class="tree-name">Sophie Sackler</div>
+              <div class="tree-role">Matriarch</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tree-connector-v-group">
+          <div class="tree-connector-v"></div>
+        </div>
+
+        <!-- Brothers -->
+        <div class="tree-level tree-brothers">
+          <div class="tree-node featured" data-id="arthur-sackler">
+            <div class="tree-avatar">AS</div>
+            <div class="tree-name">Arthur M. Sackler</div>
+            <div class="tree-role">Eldest &bull; 1913&ndash;1987</div>
+            <div class="tree-spouses">
+              <span class="spouse-tag">Else Jorgensen</span>
+              <span class="spouse-tag">Marietta Lutze</span>
+              <span class="spouse-tag">Jillian Tully</span>
+            </div>
+          </div>
+          <div class="tree-node" data-id="mortimer-sackler">
+            <div class="tree-avatar">MS</div>
+            <div class="tree-name">Mortimer D. Sackler</div>
+            <div class="tree-role">Middle &bull; 1916&ndash;2010</div>
+          </div>
+          <div class="tree-node" data-id="raymond-sackler">
+            <div class="tree-avatar">RS</div>
+            <div class="tree-name">Raymond R. Sackler</div>
+            <div class="tree-role">Youngest &bull; 1920&ndash;2017</div>
+          </div>
+        </div>
+
+        <!-- Business -->
+        <div class="tree-connector-v-group">
+          <div class="tree-connector-v"></div>
+        </div>
+
+        <div class="tree-level tree-business">
+          <div class="tree-entity">
+            <div class="entity-label">Purdue Frederick Co.</div>
+            <div class="entity-detail">Purchased 1952 by Mortimer &amp; Raymond</div>
+          </div>
+          <div class="tree-entity">
+            <div class="entity-label">Wm. Douglas McAdams</div>
+            <div class="entity-detail">Acquired by Arthur &mdash; pharma advertising</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="section">
+    <div class="section-header">
+      <h2>Timeline</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="family">Family</button>
+        <button class="filter-btn" data-filter="career">Career</button>
+        <button class="filter-btn" data-filter="business">Business</button>
+        <button class="filter-btn" data-filter="philanthropy">Philanthropy</button>
+      </div>
+    </div>
+    <div id="timeline-track" class="timeline-track">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- Notes Section -->
+  <section id="notes" class="section">
+    <div class="section-header">
+      <h2>Chapter Notes</h2>
+    </div>
+    <div id="notes-list" class="notes-list">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Reading companion for <em>Empire of Pain</em> by Patrick Radden Keefe &mdash; Natalia's notes</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
