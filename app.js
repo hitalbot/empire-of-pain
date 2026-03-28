@@ -13,6 +13,7 @@
       document.getElementById('currentChapter').textContent = data.currentChapter;
       renderCharacters(data.characters);
       renderTimeline(data.timeline);
+      renderPlaces(data.places);
       renderNotes(data.notes);
       setupNavigation();
       setupFilters();
@@ -29,28 +30,52 @@
       ? characters
       : characters.filter(c => c.generation === filter);
 
-    grid.innerHTML = filtered.map(c => `
-      <div class="character-card ${c.id === 'arthur-sackler' ? 'featured' : ''}"
-           data-generation="${c.generation}" data-id="${c.id}">
-        <div class="card-header">
-          <div class="card-avatar">
-            ${c.photo
-              ? `<img src="${c.photo}" alt="${c.name}">`
-              : c.name.split(' ').map(w => w[0]).join('').slice(0, 2)}
+    grid.innerHTML = filtered.map(c => {
+      const hasPhoto = !!c.photo;
+      const initials = c.name.split(' ').map(w => w[0]).join('').slice(0, 2);
+      const isFeatured = c.id === 'arthur-sackler';
+
+      if (hasPhoto) {
+        return `
+          <div class="character-card has-photo ${isFeatured ? 'featured' : ''}"
+               data-generation="${c.generation}" data-id="${c.id}">
+            <div class="card-photo">
+              <img src="${c.photo}" alt="${c.name}" loading="lazy">
+              ${c.photoCaption ? `<div class="card-photo-caption">${c.photoCaption}</div>` : ''}
+            </div>
+            <div class="card-body">
+              <div class="card-identity">
+                <h3>${c.name}</h3>
+                <div class="card-role">${c.role}</div>
+                ${c.born ? `<div class="card-dates">${c.born}${c.died ? ' \u2014 ' + c.died : ''}</div>` : ''}
+              </div>
+              <p class="card-bio">${c.shortBio}</p>
+              <ul class="card-bullets">
+                ${c.bullets.map(b => `<li>${b}</li>`).join('')}
+              </ul>
+              <div class="card-chapter">Introduced Ch. ${c.chapter_introduced}</div>
+            </div>
+          </div>`;
+      }
+
+      return `
+        <div class="character-card ${isFeatured ? 'featured' : ''}"
+             data-generation="${c.generation}" data-id="${c.id}">
+          <div class="card-header">
+            <div class="card-avatar">${initials}</div>
+            <div class="card-identity">
+              <h3>${c.name}</h3>
+              <div class="card-role">${c.role}</div>
+              ${c.born ? `<div class="card-dates">${c.born}${c.died ? ' \u2014 ' + c.died : ''}</div>` : ''}
+            </div>
           </div>
-          <div class="card-identity">
-            <h3>${c.name}</h3>
-            <div class="card-role">${c.role}</div>
-            ${c.born ? `<div class="card-dates">${c.born}${c.died ? ' \u2014 ' + c.died : ''}</div>` : ''}
-          </div>
-        </div>
-        <p class="card-bio">${c.shortBio}</p>
-        <ul class="card-bullets">
-          ${c.bullets.map(b => `<li>${b}</li>`).join('')}
-        </ul>
-        <div class="card-chapter">Introduced Ch. ${c.chapter_introduced}</div>
-      </div>
-    `).join('');
+          <p class="card-bio">${c.shortBio}</p>
+          <ul class="card-bullets">
+            ${c.bullets.map(b => `<li>${b}</li>`).join('')}
+          </ul>
+          <div class="card-chapter">Introduced Ch. ${c.chapter_introduced}</div>
+        </div>`;
+    }).join('');
   }
 
   // ---- Timeline ----
@@ -66,7 +91,29 @@
         <div class="timeline-dot" data-category="${t.category}"></div>
         <div class="timeline-year">${t.year}</div>
         <div class="timeline-event">${t.event}</div>
+        ${t.image ? `
+          <div class="timeline-image">
+            <img src="${t.image}" alt="${t.event}" loading="lazy">
+          </div>` : ''}
         <div class="timeline-chapter">Chapter ${t.chapter}</div>
+      </div>
+    `).join('');
+  }
+
+  // ---- Places ----
+
+  function renderPlaces(places) {
+    if (!places || !places.length) return;
+    const grid = document.getElementById('places-grid');
+    grid.innerHTML = places.map(p => `
+      <div class="place-card">
+        <div class="place-card-image">
+          <img src="${p.image}" alt="${p.name}" loading="lazy">
+        </div>
+        <div class="place-card-body">
+          <div class="place-card-name">${p.name}</div>
+          <div class="place-card-caption">${p.caption}</div>
+        </div>
       </div>
     `).join('');
   }

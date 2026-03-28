@@ -13,7 +13,8 @@
       "died": "",
       "role": "Patriarch",
       "generation": "immigrant",
-      "photo": "",
+      "photo": "images/flatbush-1902.jpg",
+      "photoCaption": "Flatbush Avenue, Brooklyn, early 1900s — the neighborhood where the Sacklers settled",
       "shortBio": "Immigrated to Brooklyn from Galicia in the early 1900s. Ran a grocery store in Flatbush that failed during the Great Depression. Fiercely valued education.",
       "bullets": [
         "Immigrated from Galicia (modern-day Poland/Ukraine) in the pre-WWI wave",
@@ -50,7 +51,8 @@
       "died": "May 26, 1987",
       "role": "Eldest Brother / Pharma Marketing Pioneer",
       "generation": "brothers",
-      "photo": "",
+      "photo": "images/arthur-sackler.jpg",
+      "photoCaption": "Arthur M. Sackler",
       "shortBio": "The architect of the Sackler empire. Physician, psychiatrist, art collector, and the man who invented modern pharmaceutical advertising. Funded his brothers' educations and built the playbook Purdue Pharma would later use for OxyContin.",
       "bullets": [
         "Eldest of the three brothers — quasi-paternal figure to Mortimer and Raymond",
@@ -94,7 +96,8 @@
       "died": "July 17, 2017",
       "role": "Youngest Brother / Purdue Co-Owner",
       "generation": "brothers",
-      "photo": "",
+      "photo": "images/raymond-sackler.jpg",
+      "photoCaption": "Raymond R. Sackler",
       "shortBio": "The youngest Sackler brother. Physician. Worked closely with Mortimer in the pharmaceutical business. Co-purchased Purdue Frederick Company.",
       "bullets": [
         "Youngest of the three brothers",
@@ -165,12 +168,33 @@
       "arthur-sackler": ["else-jorgensen", "marietta-lutze", "jillian-sackler"]
     }
   },
+  "places": [
+    {
+      "id": "flatbush",
+      "name": "Flatbush, Brooklyn",
+      "image": "images/flatbush-1902.jpg",
+      "caption": "Flatbush Avenue, Brooklyn, early 1900s — where the Sacklers settled after immigrating"
+    },
+    {
+      "id": "creedmoor",
+      "name": "Creedmoor State Hospital",
+      "image": "images/creedmoor.jpg",
+      "caption": "Creedmoor Psychiatric Center, Queens — where Arthur conducted early psychiatric research"
+    },
+    {
+      "id": "temple-dendur",
+      "name": "Sackler Wing, The Met",
+      "image": "images/temple-dendur.jpg",
+      "caption": "The Temple of Dendur in the Sackler Wing at The Metropolitan Museum of Art — name removed in 2021"
+    }
+  ],
   "timeline": [
     {
       "year": "Early 1900s",
       "event": "Isaac Sackler immigrates from Galicia to Brooklyn",
       "category": "family",
-      "chapter": 1
+      "chapter": 1,
+      "image": "images/flatbush-1902.jpg"
     },
     {
       "year": "1913",
@@ -206,7 +230,8 @@
       "year": "~1942",
       "event": "Arthur begins work at Creedmoor State Hospital, conducting psychiatric research",
       "category": "career",
-      "chapter": 2
+      "chapter": 2,
+      "image": "images/creedmoor.jpg"
     },
     {
       "year": "1940s",
@@ -236,7 +261,8 @@
       "year": "1960s-70s",
       "event": "Arthur builds vast art collection — Sackler Wing at the Met, Smithsonian galleries",
       "category": "philanthropy",
-      "chapter": 3
+      "chapter": 3,
+      "image": "images/temple-dendur.jpg"
     }
   ],
   "notes": [

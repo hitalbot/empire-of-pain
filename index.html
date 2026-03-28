@@ -27,6 +27,7 @@
     <button class="tab active" data-section="characters">Characters</button>
     <button class="tab" data-section="family-tree">Family Tree</button>
     <button class="tab" data-section="timeline">Timeline</button>
+    <button class="tab" data-section="places">Places</button>
     <button class="tab" data-section="notes">Notes</button>
   </nav>
 
@@ -77,7 +78,7 @@
         <!-- Brothers -->
         <div class="tree-level tree-brothers">
           <div class="tree-node featured" data-id="arthur-sackler">
-            <div class="tree-avatar">AS</div>
+            <div class="tree-avatar"><img src="images/arthur-sackler.jpg" alt="Arthur Sackler"></div>
             <div class="tree-name">Arthur M. Sackler</div>
             <div class="tree-role">Eldest &bull; 1913&ndash;1987</div>
             <div class="tree-spouses">
@@ -92,7 +93,7 @@
             <div class="tree-role">Middle &bull; 1916&ndash;2010</div>
           </div>
           <div class="tree-node" data-id="raymond-sackler">
-            <div class="tree-avatar">RS</div>
+            <div class="tree-avatar"><img src="images/raymond-sackler.jpg" alt="Raymond Sackler"></div>
             <div class="tree-name">Raymond R. Sackler</div>
             <div class="tree-role">Youngest &bull; 1920&ndash;2017</div>
           </div>
@@ -130,6 +131,16 @@
       </div>
     </div>
     <div id="timeline-track" class="timeline-track">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- Places Section -->
+  <section id="places" class="section">
+    <div class="section-header">
+      <h2>Key Places</h2>
+    </div>
+    <div id="places-grid" class="places-grid">
       <!-- Populated by JS -->
     </div>
   </section>
